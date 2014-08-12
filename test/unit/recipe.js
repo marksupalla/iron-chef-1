@@ -22,13 +22,13 @@ describe('Recipe', function(){
     });
   });
 
-  describe('constructor', function(){
+/*  describe('constructor', function(){
     it('should create a new Recipe object', function(){
       var r = new Recipe();
       expect(r).to.be.instanceof(Recipe);
     });
   });
-
+*/
   describe('.all', function(){
     it('should get all recipes', function(done){
       Recipe.all(function(err, recipes){
@@ -38,4 +38,12 @@ describe('Recipe', function(){
     });
   });
 });
-
+describe('.create', function(){
+    it('should create an recipe', function(done){
+      var salad = {name:'salad',: o};
+      Recipe.create(o, function(err, recipe){
+        expect(recipe._id).to.be.instanceof(Mongo.ObjectID);
+        done();
+      });
+    });
+  });
