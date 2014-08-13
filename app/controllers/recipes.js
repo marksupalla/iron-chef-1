@@ -14,3 +14,8 @@ exports.create = function(req, res){
   });
 };
 
+exports.deleteById = function(req, res){
+  Recipe.deleteById(req.params.id, function(){
+    res.send({id:req.params.id});
+  });
+};

@@ -2,15 +2,24 @@ extends ../shared/template
 block content
   #controls
     #visibility
-      button#hide HIDE FORM
-      button#show SHOW FORM
+      button.grey#hide HIDE FORM
+      button.grey#show SHOW FORM
     form(method='post', action='/recipes')
+      select(name='category')
+        option Favorites
+        option Healthy Crap
+        option Dessert
       input(name='name', type='text', placeholder='RECIPE NAME')
       input(name='photo', type='text', placeholder='IMAGE URL')
       input(name='ingredients', type='text', placeholder='INGREDIENTS')
       label DIRECTIONS
       textarea(name='directions')
-      button ADD RECIPE
+      button.yellow ADD RECIPE
+
+  ul#categories
+    li: a(href='#') Favorites
+    li: a(href='#') Healthy Crap
+    li: a(href='#') Dessert
 
   #recipes
     each recipe in recipes
