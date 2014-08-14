@@ -17,7 +17,7 @@
     e.preventDefault();
   } 
 
-  function filterCategory(){
+  function filterCategory(e){
     var category = $(this).text();
     if(category !== 'All'){
       $('.recipe .category:contains('+category+')').closest('.recipe').fadeIn();

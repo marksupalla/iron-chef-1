@@ -56,7 +56,6 @@ header h1{
   position: relative;
   left: 20px;
 }
-display
 #recipes{
   display: block;
 }
@@ -73,10 +72,6 @@ form input, form button, form textarea{
   display: block;
 }
 
-li{
-  text-align: left;
-  list-style: auto; 
-}
 
 #categories li{
   display: inline-block;
@@ -102,4 +97,10 @@ a.cat{
   margin: 5px;
 }
 
-
+.ingredients li a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  margin:1px;
+  color: black; 
+}
