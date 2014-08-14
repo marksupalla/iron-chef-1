@@ -17,9 +17,10 @@ block content
       button.yellow ADD RECIPE
 
   ul#categories
-    li: a(href='#') Favorites
-    li: a(href='#') Healthy Crap
-    li: a(href='#') Dessert
+    li: a.cat(href='#') All
+    li: a.cat(href='#') Favorites
+    li: a.cat(href='#') Healthy Crap
+    li: a.cat(href='#') Dessert
 
   #recipes
     each recipe in recipes
